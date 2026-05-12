@@ -3,7 +3,7 @@ agent any
 stages { 
 stage('Run Script') { 
 steps { 
-bat 'python app.py 5' 
+sh 'python3 app.py 5' 
 } 
 } 
 } 
