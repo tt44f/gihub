@@ -1,7 +1,10 @@
-stage('Test Cases') {
+pipeline {
+agent any
+stages {
+stage('Run Script') {
 steps {
-sh 'python3 app.py 5'
-sh 'python3 app.py -3'
-sh 'python3 app.py 0'
+bat 'python3 number_signe.py 5'
+}
+}
 }
 }
